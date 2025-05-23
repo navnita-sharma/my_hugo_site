@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "my_hugo_site"
+location: "asia-east1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "my_hugo_site-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
